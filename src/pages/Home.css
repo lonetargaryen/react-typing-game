@@ -5,4 +5,10 @@ div.app-home {
 
 div.header-div {
     display: flex;
+    flex-direction: column;
+}
+
+div.content-div {
+    display: flex;
+    flex-direction: column;
 }
