@@ -1,0 +1,8 @@
+div.app-home {
+    display: flex;
+    flex-direction: column;
+}
+
+div.header-div {
+    display: flex;
+}
