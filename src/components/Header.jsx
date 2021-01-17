@@ -1,7 +1,9 @@
+import './Header.css'
+
 function Header() {
     return (
         <div className="component-header">
-            <h1>Practise your typing!</h1>
+            <h1>Practise your typing!<span class="blinking-cursor">_</span></h1>
         </div>
     )
 }
