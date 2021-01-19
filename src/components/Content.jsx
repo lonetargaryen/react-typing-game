@@ -10,7 +10,7 @@ function Content() {
             <p className="component-status-message">Status message!</p>
 
             <div className="input-form-div">
-                <button>Start!</button>
+                <button className="input-form-div"> <span className="input-form-div">Start!</span> </button>
                 <input type="text" className="component-input-tag" />
             </div>
 
