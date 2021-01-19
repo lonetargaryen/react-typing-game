@@ -83,3 +83,20 @@ button.input-form-div:hover {
     background-color: black;
     opacity: 1.0;
 }
+
+.highlight {
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+
+.error {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: inherit;
+    padding: 0.35em 0.9em;
+    border-radius: 500px;
+    max-width: 70%;
+    border: 1px solid;
+    background-color: rgb(240, 20, 20) !important;
+    border: red;
+}
