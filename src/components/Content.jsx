@@ -25,6 +25,9 @@ class Content extends React.Component {
         const messageElement = document.getElementById('message');
         const typedValueElement = document.getElementById('typed-value');
 
+        // disabling input
+        typedValueElement.disabled = true;
+
         document.getElementById('start').addEventListener('click', () => {
             // get a quote
             const quoteIndex = Math.floor(Math.random() * quotes.length);
@@ -45,6 +48,7 @@ class Content extends React.Component {
             messageElement.innerText = '';
         
             // Setup the textbox
+            typedValueElement.disabled = false;
             // Clear the textbox
             typedValueElement.value = '';
             // set focus
@@ -67,6 +71,7 @@ class Content extends React.Component {
                 const elapsedTime = new Date().getTime() - startTime;
                 const message = `Nice! You finished in ${elapsedTime / 1000} seconds.`;
                 messageElement.innerText = message;
+                typedValueElement.disabled = true;
             } 
             else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) {
                 // end of word
@@ -84,7 +89,7 @@ class Content extends React.Component {
             else if (currentWord.startsWith(typedValue)) {
                 // currently correct
                 // highlight the next word
-                typedValueElement.className = 'input-form-div';
+                typedValueElement.className = 'component-input-tag';
             } 
             else {
                 // error state
