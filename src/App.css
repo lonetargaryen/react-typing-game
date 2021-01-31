@@ -1,6 +1,6 @@
 div.App {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(to bottom left, #434343 0%, black 100%);
     min-height: 100vh;
 }

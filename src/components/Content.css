@@ -85,8 +85,9 @@ button.input-form-div:hover {
 }
 
 .highlight {
-    background-color: yellowgreen;
+    background-color: #954e97;
     border-radius: 5px;
+    /* opacity: 0.5; */
 }
 
 .error {

@@ -1,6 +1,7 @@
 div.app-home {
     display: flex;
     flex-direction: column;
+    color: #66FF66;
 }
 
 div.header-div {
